@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User manager</title>
+    <link rel="stylesheet" href="user.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="user-area">
+                <div class="form-group">
+                    <label for="membername">Member name</label>
+                    <input type="text" name="membername" id="membername" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="avatar">Avatar</label>
+                    <input type="url" name="avatar" id="avatar" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="mobile">Mobile</label>
+                    <input type="tel" name="mobile" id="mobile" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="email">Status</label>
+                    <select name="status" id="status" class="form-control">
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label></label>
+                    <a href="javascript:;" class="btn btn-primary" onclick="createUser()">Create user</a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <table class="table table-striped table-hover">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>
+                            <input type="checkbox">
+                        </th>
+                        <th>Avatar</th>
+                        <th>Member name</th>
+                        <th>Mobile</th>
+                        <th>Email</th>
+                        <th>Status</th>
+                        <th>Operations</th>
+                    </tr>
+                </thead>
+                <tbody id="tbUsers">
+                   
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="user.js"></script>
+</body>
+</html>

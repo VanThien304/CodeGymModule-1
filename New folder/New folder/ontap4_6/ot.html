@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="nhap">
+        <p>Nhap a:
+        <input name="a" type="text" />
+        x1:
+        <label>
+        <input type="text" name="d" />
+        </label>
+        </p>
+        <p>Nhập b:
+        <label>
+        <input type="text" name="b" />
+        </label>
+        x2:
+        <label>
+        <input type="text" name="e"/>
+        </label>
+        </p>
+        <p>Nhập c:
+        <label>
+        <input type="text" name="c"/>
+        </label>
+        Nghiệm kép:
+        <label>
+        <input type="text" name="f" />
+        </label>
+        </p>
+        <p>
+        <label>
+        <input type="button" value="giai" onclick="ptbh()" />
+        <input type="button" value="reset" onclick="location.href='ptbh.htm'" />
+        </label>
+        </p>
+        </form>
+    <script>
+        // viết phương trình ax+b = 0,a#0
+        // function ptbn(a,b){
+        //     if(a==0 && b == 0){
+        //         alert("Phương trình có vô số nghiệm")
+        //     }else if (a!=0 && b==0){
+        //         alert("Phương trình có nghiệm x=0")
+        //     }else if(a==0 && b!=0){
+        //         alert("Phương trình vô nghiệm")
+        //     }else{
+        //         alert("Phương trình có nghiệm x=" + (-b/a))
+        //     }
+        // }
+        // ptbn(5,0)
+        
+        //viết phương trình bậc 2: ax2+bx+c=0
+        // function pt_bac_hai(Pt){
+        //     var Pt = a,b,c,x1,x2;
+        //     delta = b*b-4*a*c;
+        //     if(delta<0){
+        //         alert("Phương trình vô nghiệm")
+        //     }else if(delta==0){
+        //         x=-b/2*a
+        //         alert("Phương trình có nghiệm kép x = " + x)
+        //     }
+        // }
+        // pt_bac_hai(0)
+//         function ptbh()
+// {
+//         var a, b, c, delta, x, x1, x2;
+// a = document.nhap.a.value;
+// b = document.nhap.b.value;
+// c = document.nhap.c.value;
+// delta = b*b - 4*a*c;
+// if (delta < 0)
+// {
+// document.write(" Phương trình vô nghiệm ");
+// }
+// else if (delta ==0)
+// {
+// x = -b/2*a;
+// document.nhap.f.value =x;
+// }
+// else if (delta > 0)
+// {
+// x1 = (-b + Math.sqrt(delta))/(2*a);
+// document.nhap.d.value =x1;
+// x2 = (-b - Math.sqrt(delta))/(2*a);
+// document.nhap.e.value =x2;
+// }
+// }
+        // var a = 100;
+        // var b =200;
+        //     switch(a){
+        //         case 100: 
+        //         alert("a = " +a)
+        //     }
+        //         switch(b){
+        //             case 200: 
+        //             alert("b = " +b)
+        //     }
+        // var opera = "+";
+        // var a = 6;
+        // var b = 3;
+        // switch(opera){
+        //     case'+':
+        //     alert("a + b = " + (a+b));
+        //     break;
+        //     case'-':
+        //     alert("a-b" + (a-b));
+        //     break;
+        //     case'*':
+        //     alert("a*b" + (a*b));
+        //     break;
+        //     case'/':
+        //     alert("a/b" + (a/b));
+        //     break;
+        //     default:
+        //         alert("k có phép toán");
+        //         break
+        // }
+//         switch (new Date().getDay()) {
+//   case 0:
+//     day = "Chủ Nhật";
+//     break;
+//   case 1:
+//     day = "Thứ hai";
+//     break;
+//   case 2:
+//     day = "Thứ ba";
+//     break;
+//   case 3:
+//     day = "Thứ tư";
+//     break;
+//   case 4:
+//     day = "Thứ năm";
+//     break;
+//   case 5:
+//     day = "Thứ sáu";
+//     break;
+//   case 6:
+//     day = "Thứ bảy";
+//     break;
+// }
+
+let x = 1, i;
+for (i = 0; i < 3; i = i + 2) {
+    x = x + 1;
+}
+console.log(x);
+console.log(i);
+// khi x=1 =,i=0 
+// khi x=2 =,i=2 thỏa đk i<3 thì x=x+1 và gt có đc x=2 và i=2
+//khi x=3 =,i=2 thỏa đk i<3 thì x=3+1 và gt có đc x=3 và i=1
+//khi x=3 =,i=0 thỏa đk i<3 thì x=3+1 và gt có đc x=3 và i=4
+
+// let x = 1;
+// for (let i = 0; i < -1; i = i + 2) {
+//     x = x + 1;
+// }
+// console.log(x);
+// let i = 0;
+// while (i < 0) {
+//     console.log("hi");
+// }
+// let x = 3;
+
+// let i = 0;
+// while (i < 3) {
+//     x += 1;
+//     i += 1;
+// }
+// let i = 3;
+// while (i < 6) {
+//     console.log(i);
+//     i += 1;
+// }
+// let x = 1;
+// for (let i = 0; i < 3; i++) {
+//     x = x + 1;
+// }
+// console.log(x);
+// khi x=1, i=0 thỏa đk <3 nên x=x+1 vậy gt x lúc này x=2 và i=0
+//khi x=2, i=1 thỏa đk <3 nên x=2+1 vậy gt x lúc này x=3 và i=1
+//khi x=3, i=2 thỏa đk <3 nên x=3+1 vậy gt x lúc này x=4 và i=2
+//khi x=4, i=3 k hông thỏa đk 3<3 nên vòng lặp for sẽ kết thúc
+
+
+</script>
+</body>
+</html>

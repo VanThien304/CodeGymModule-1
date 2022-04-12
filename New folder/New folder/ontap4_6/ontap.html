@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>JavaScript Array.findIndex()</h2>
+    <p id="demo"></p>
+    <script>
+        // const a = 7
+        // function print(){
+        //     a = 10;
+        // }
+        // console.log(a);
+        // print();
+        // console.log(a);
+        // khởi tạo const a = 7 chạy vào console.log(a) ra giá trị 7,rồi gọi
+        // hàm print() có giá trị a = 10, sẽ không hợp lệ vì const là hằng số
+        // đổi nên giá trị nên k gán đc cho biến const.
+
+        // const a = 7
+        // function print(){
+        //    var a = 10;
+        // }
+        // console.log(a);
+        // print();
+        // console.log(a);
+        // khởi tạo từ khóa const có giá a = 7 console.log(a) ra kết quả có giá trị bằng 7
+        // gọi hàm print chạy hàm print có khai báo từ khóa var có giá trị var a=10, vì const
+        // là một giá trị k đổi, k thể gán lại cho bất kì ... nên có giá trị vẫn = 7 nên hiển thị
+        // kết quả  = 7
+        // vậy bài toán lúc này sẽ hiển thị ra 2 kết quả có giá trị = 7.
+
+        // let a = 7
+        // function print(){
+        //    let a = 10;
+        // }
+        // console.log(a);
+        // print();
+        // console.log(a);
+
+        // khởi tạo từ khóa let có biến a giá trị = 7 chạy chương trình được giá trị bằng 7
+        // gọi vào hàm print,khởi tạo từ khóa let có biến a giá trị = 10 in ra kết quả ta được
+        // giá trị = 7, vì let là biến cục bộ nên lúc console.log ngoài blockcode thì biến
+        // in ra lúc này sẽ có giá trị 7
+        // vậy bài tóa này ta được 2 giá trị. 7 và 7
+
+        // var a = 7
+        // function print(){
+        //    var a = 10;
+        // }
+        // console.log(a);
+        // print();
+        // console.log(a);
+
+        // khởi tạo từ khóa let, biến a có giá trị = 7,khi chạy vào console.log sẽ hiển thị giá trị
+        // = 7, chạy hàm print,khởi tạo từ khóa var biến a có giá trị = 10, console.log(a) lúc này sẽ nhận
+        
+        // vậy bài toán lúc này có 2 giá trị 7 và 7
+        
+
+            // var a = 7;
+            
+            // var a = 5;
+            // console.log(a)
+            // if(true){
+            //     const a = 10;
+                
+            // }
+            // console.log(a)
+            // block code là một khối lệnh nằm trong vòng if,for,while,do..while
+            // var greeting = "hey hi";
+            // var times = 4;
+            // if(times >3){
+            //     let greeting = " say Hello instead  "
+
+            // }
+            // console.log(greeting) 
+        //    vì let khai báo trong blockcode nên k đc hiển thị, kết quả là "hey hi"
+
+
+            // let greeting = "hey hi";
+            // let times = 4;
+            // if(times >3){
+            //     var hello = "say hello..."
+            //     console.log(hello)
+            // }
+            // console.log(hello)
+            // vì var khai báo block code toàn cục nên kết quả sẽ hiển thị là: sayhello, sayhello'
+
+            //  ++a và a++
+            //  var a =12;
+            //  if(++a > 12){
+            //      console.log("*" + a)
+            //  }else{
+            //      console.log(a)
+            //  }
+
+
+            //  var a =12;
+            //  if(a++ > 12){
+            //      console.log("*" + a)
+            //  }else{
+            //      console.log(a)
+            //  }
+
+            // let number = 6;
+            // let b = number++ + ++number
+            // console.log(b);
+
+            // viết phương trình bậc ax+b=0, a#0
+            // var a = Number(prompt("nhập a"))
+            // var b = Number(prompt("nhập b"))
+            
+            
+        
+        //     function phuong_trinh_bac_nhat(a,b){
+        //     if(a == 0 && b== 0){
+        //     alert("ptvsn")
+              
+        //     }else if(a!=0 && b==0) {
+        //         alert("ptcn x=0")
+
+        //     }else if(a==0 && b!=0){
+        //         alert("ptvn")
+
+        //     }else{
+        //         alert("ptcn x=" +(-b/a))
+        //     }
+        // }   
+        //  phuong_trinh_bac_nhat(-4,7)    
+
+
+
+        //viết hàm kiểm tra số 5 là vị trí bao nhiêu
+    //     let arr = [1,2,4,5,7]
+    //    function findIndex(number){
+    //        for(let i =0;i<arr.length;i++){
+    //            if(arr[i] == number){
+    //                return i;
+    //            }
+    //        }
+    //    }
+    //    console.log(findIndex(5)) tìm giá trị của 5
+
+   
+             
+            
+            
+                
+            
+
+
+            
+        
+
+
+    </script>
+</body>
+</html>

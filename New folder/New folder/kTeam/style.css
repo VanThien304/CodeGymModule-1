@@ -1,0 +1,34 @@
+h1{
+    color: green;
+    /* sử dụng màu theo tên của màu */
+    font-family: 'Lato', sans-serif; 
+    font-weight: 700; 
+    font-size: 50px;   
+}
+textarea{
+    display: block;
+}
+h1{
+    color: green;
+    /* sử dụng màu theo tên của màu */
+    color: #0000ff;
+    /* red green blue */
+    color: rgb(red, green, blue);
+    /* rgb phối màu giữa red green blue  */
+    color:rgba(red, green, blue, alpha) ;
+    /* alpha thể hiện độ đậm, mờ của màu */
+
+    /* chú ý khi sử dụng màu trong thiết kế website
+    + chỉ nên sử dụng 1 màu cơ bản, và sử dụng thêm trong
+    trang web là màu đó và cường độ đậm nhạt khác nhau
+    + ta cũng nên sử dụng màu thông qua ý nghĩa thông
+    dụng của nó
+    + RED sức mạnh, đam mê, hào hứng.
+    + ORANGE thân thiện,tự tin, mạnh mẽ hơn màu đỏ,dũng cảm.
+    + YELLOW thông minh, năng lượng,sự tò mò.
+    + GREEN cuộc sống,sức khỏe, hài hòa, màu đậm hơn thì sẽ có liên
+    quan đến tiền bạc.
+    + BLUE ổn định, niền tin,yên bình.
+    + PURPLE huyền bí,sang trọng.
+    + PINK sự quan tâm, thư giãn, thoải mái. */
+}

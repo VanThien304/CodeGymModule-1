@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- ECMAScript
+    OOP ES6
+    Object Contructor
+    Arrow Function
+    
+    1. Bao đóng
+    2. Trừu tượng
+    3. Kế thừa
+    4. Đa hình
+
+    -->
+    <script>
+        // class Staff{
+        //     constructor(id,fullname,age,dob){
+        //         this.id = id;
+        //         this.fullname = fullname;
+        //         this.age = age;
+        //         this.dob = dob;
+        //     }
+        //     greeting(){
+        //         return `My name is ${this.fullname}`
+        //     }
+        // }
+        // class Manager extends Staff{
+        //     constructor(id,fullname,age,dob,title){
+        //        super(id,fullname,age,dob);
+        //        this.title = title; 
+        //     }
+        //     greeting(){
+        //         // return `${super.greeting()},I'm ${this.title}`
+        //     }
+        //     static rule(){
+
+        //     }
+
+        // }
+        // let phuoc = new Manager(2,"phước",20,"1/1/2000","team leader");
+        // console.log(phuoc)
+
+        // function Staff2(id,fullname,age,dob){
+        //         this.id = id;
+        //         this.fullname = fullname;
+        //         this.age = age;
+        //         this.dob = dob;
+        //         this.greeting = function(){
+        //         return `My name is ${this.fullname}`
+        //     }
+        // }
+        // let numbers = [2,3,4,5,6,7,8,9]
+        // let numbers2 = [3,4,5,3,4,5,6,7]
+        // console.log(numbers.indexOf(4))
+        // if(Array.prototype.indexOf2 !== `function`){
+        //     Array.prototype.indexOf2 = function(){
+        //         for(let i=0;i<this.length;i++){
+        //             if(this[i] ==2){
+        //                 return i;
+        //             }
+        //         }
+        //         return -1
+        //     }
+        //     console.log(numbers2.indexOf2())
+        //}
+
+        class Animal {
+    constructor(name,weight) {
+        this.name = name;
+        this.weight = weight;
+    }
+    setName(name) {
+        this.name = name;
+    }
+    setWet = weight;
+    }ight (weight) {
+        this.weigh
+    
+    getName() {
+        return `Name: ${this.name}`;
+    }
+    getWeight() {
+        return `Weight: ${this.weight}`;
+    }
+    toString() {
+        return `name:${this.name}, weight:${this.weight}`;
+    }
+}
+    let objAnimal1 = new Animal();
+    objAnimal1.setName("Elephant");
+    objAnimal1.setWeight(45.6);
+    console.log(objAnimal1);
+    console.log(objAnimal1.toString());
+    let objAnimal2 = new Animal("Rabbit",22);
+    // objAnimal2.setName("Rabbit");
+    console.log(objAnimal2);
+    </script>
+</body>
+</html>

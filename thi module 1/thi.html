@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // function pt_bac_hai(a,b,c){
+        //     if(a==0){
+        //         if(b==0){
+        //             if(c==0){
+        //                 console.log("Phương trình có vô số nghiệm!");
+        //             }else{
+        //                 console.log(("Phương trình vô nghiệm"));
+        //             }
+        //         }else{
+        //             console.log("Phương trình có nghiệm duy nhất: " + (-c/b));
+        //         }
+        //     }else{
+        //         var delta = b*b-4*a*c;;
+        //         if(delta > 0){
+        //             var x1 = (-b + Math.sqrt(delta))/(2*a);
+        //             var x2 = (-b - Math.sqrt(delta))/(2*a);
+        //             console.log("Nghiệm x1= " + x1 + "Nghiệm x2= " +  x2);
+        //         }else if(delta == 0){
+        //             var sum = -b/2*a;
+        //             console.log("Phương trình có nghiệm kép: x1 = x2 =" + sum);
+        //         }else{
+        //             console.log(`Phương trình vô nghiệm  Delta ${delta}`);
+        //         }
+        //     }
+        // }
+        // pt_bac_hai(2,2,2)
+
+    //1. xây dựng lớp staff với các thuộc tính:fullname và email:
+    //phương thức: setFullname(): để thiết đặt giá trị mới cho thuộc tính fullname theo giá trị của tham số
+    //truyền vào.
+    //getFullname(): trả về tên của một staff
+    //setEmail():để thiết đặt giá trị mới cho thuộc tính email theo giá trị
+    // của tham số truyền vào.
+    //getEmail():trả về email của một staff
+    //tostring():trả về chuỗi chứa thông tin của một đối tượng gồm fullname và email.
+    //2. sử dụng lớp staff vừa định nghĩa để xây dựng một chương trình js với
+    //kịch bản sau:
+    //tạo đối tượng có tên david,sử dụng constructor và truyền 2 giá trị
+    //"David" và "david@gmail.com".
+    //gọi pthuc setEmail để thay đổi email của đối tượng david thành david.do@gmail.com.
+    //gọi pthuc tostring() để tra về thông tin của đối tượng David.
+    //tạo một mảng staffs gồm có 3 đối tượng,trong đó có đối tượng david ở trên.
+    //của từng đối tượng
+    //Lặp qua mảng staff và gọi pthuc tostring() để hiển thị thông tin của
+    //từng đối tượng.
+             function Staff(fullname, email){
+                 this.fullname = fullname
+                 this.email = email
+                 this.setFullName = function(fullNameValue){
+                     this.fullname = fullNameValue
+                 }
+                 getFullName = function(){
+                     this.fullname
+                 }
+                 this.setEmail = function(emailValue){
+                   return  this.email = emailValue
+                 }
+                 getEmail = function(){
+                    return this.email
+                 }
+                 this.toString = function(){
+                     return `name: ${this.fullname} Email: ${this.email}`;
+                 }
+             }
+             let david = new Staff("David","david@gmail.com");
+             david.setFullName("David Do");
+             david.setEmail("david.do@gmail.com");
+            //  console.log(david.toString());
+             let staffs = [
+                 new Staff("Thien","thienphan@gmail.com"),david,new Staff("vanthien","vanthien@gmail.com")
+             ];
+             for(let i = 0 ; i<staffs.length;i++){
+                 console.log(staffs[i].toString());
+             }
+    </script>
+</body>
+</html>

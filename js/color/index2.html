@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RGBA</title>
+</head>
+<body>
+    <table>
+        <tbody>
+            <tr>
+                <td colspan="4" id="tbcolor" style="padding:35px 0px; text-align: center;">RGBA(255,99,71,0.5)</td>
+            </tr>
+            <tr>
+                <td>Red</td>
+                <td>Green</td>
+                <td>Blue</td>
+                <td>Alpha</td>
+            </tr>
+            <tr>
+                <td><input type="range" id="red" value="255" min="0" max="255" oninput="rangeColor()"></td>
+                <td><input type="range" id="green" value="99" min="0" max="255" oninput="rangeColor()"></td>
+                <td><input type="range" id="blue" value="71" min="0" max="255" oninput="rangeColor()"></td>
+                <td><input type="range" id="alpha" value="50" min="0" max="100" oninput="rangeColor()"></td>
+            </tr>
+            <tr>
+                <td class="clValue">255</td>
+                <td class="clValue">99</td>
+                <td class="clValue">71</td>
+                <td class="clValue">50</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script>
+        function rangeColor(){
+            let _red = Number(document.getElementById("red").value)
+            let _green = Number(document.getElementById("green").value)
+            let _blue = Number(document.getElementById("blue").value)
+            let _alpha = (Number(document.getElementById("alpha").value)/100).toFixed(1)
+
+            let clValues = document.getElementsByClassName("clValue")
+            clValues[0].innerHTML = _red;
+            clValues[1].innerHTML = _green;
+            clValues[2].innerHTML = _blue;
+            clValues[3].innerHTML = _alpha;
+
+            let tbcolor = `RGBA(${_red},${_green},${_blue},${_alpha})`
+            document.getElementById("tbcolor").innerText = tbcolor
+            document.getElementById("tbcolor").style.backgroundColor = tbcolor
+
+        }
+        rangeColor();
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function createArray(size,min,max){        
+       
+        let arr = new Array(size);
+        for(i=0;i<size;i++){
+          arr[i] =  Math.floor(Math.random()*(max-min+1)+min)
+        }
+        // console.log(arr);
+        return arr;
+       
+
+        }
+
+let arr = createArray(10,10,40);
+console.log(arr);
+document.write(arr)
+let total = arr.reduce(function(prev,value){
+    return prev + value
+})
+console.log(total)
+let evenNumbers = arr.filter(function(value){
+    return value%2==0
+})
+console.log(evenNumbers)
+
+
+    
+    </script>
+</body>
+</html>

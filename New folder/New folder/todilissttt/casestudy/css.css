@@ -1,0 +1,23 @@
+.table tr,td{
+    border: none black;
+    border-collapse: collapse;
+    font-family: cursive;
+}
+#mytable{
+    width: 100%;
+}
+#day{
+    
+    text-align: center;
+}
+td th{
+    padding: 5px;
+}
+body{
+   width: 100%;
+    font-size: 80px;
+}
+/* .table.table-blue{
+    background-color:rgb(239, 255, 253);
+    color: rgb(66, 194, 255);
+} */

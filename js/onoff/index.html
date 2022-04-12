@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <img src=".//off.jpg" onclick="controlLight">
+    
+    <button onclick="controlLight()">Turn on</button>
+    <script>
+        let lightIsoff = true;
+        function controlLight(){
+            let light = document.getElementsByTagName("img")[0];
+            let btn = document.getElementsByTagName("button")[0];
+            if (lightIsoff){
+                light.src = ".//on.jpg";
+                lightIsoff = false;
+                btn.innerText = "Turn off";
+            }
+            else{
+                light.src = ".//off.jpg";
+                lightIsoff = true;
+                btn.innerText = "Turn on";
+            }
+
+        }
+    </script>
+</body>
+</html>

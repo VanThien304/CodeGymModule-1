@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #table tr,td{
+            padding: auto;
+        }
+        .product{
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+
+        <script>
+      function Product(productId,productName,price,quantity){
+          this.productId = productId;
+          this.productName = productName;
+          this.price = price;
+          this.quantity = quantity;
+      }
+      let products = [
+          new Product(1,"warter",1000,10),
+          new Product(2,"warter1",15000,20),
+          new Product(3,"warter2",11000,30),
+          new Product(4,"warter3",10000,40)
+      ]
+      let htmls = products.map(function(pro){
+        return `<tr>
+                    <td>${pro.productId}</td>
+                    <td>${pro.productName}</td>
+                    <td>${pro.price}</td>
+                    <td>${pro.quantity}</td>
+                </tr>`
+      })
+      document.write(`<table border="1">${htmls.join("")}</table>`)
+    </script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Quản lý thời gian cá nhân</title>
+    <link rel="stylesheet" href="todolist.css">
+</head>
+<body onload="initTasks()">
+   
+    
+    <div class="body-table">
+            <div class="form-control">
+                <textarea class="content" name="" id="content" placeholder="Nhập tên công việc"></textarea>
+                <div id="secFatal">
+                    <select name="" id="idFatalMode">
+                    <option value="normal">Bình Thường</option>
+                    <option value="important">Quan Trọng</option>
+                    <option value="veryimportant">Rất Quan Trọng</option>
+                    </select>
+                </div>
+                <div id="idDivTime">
+                    <input type="time" id="idTimeStart" >
+                    <input type="time" id="idTimeEnd" >
+                </div>
+                <div id="secStatus">
+                     <select name="" id="idStatus">
+                    <option value="idUnFinished">Chưa Hoàn Thành</option>
+                    <option value="idProcessing">Đang Thực Hiện</option>
+                    <option value="idComplete">Hoàn Thành</option>
+                    </select>
+                </div>
+               
+                <button id="btnCreateOrEdit" onclick="createOrEdit(-1)">Create</button>
+            </div>
+            
+            <div id="list-task">
+            <h4>Danh sách công việc</h4>
+                <div id="result">
+                <ol>
+                    <li><p>Chưa có công việc nào!</p></li>
+                </ol> 
+            </div>
+            </div>
+            
+            </div>
+    </div>
+   
+    
+    <script src="todolist.js"></script>
+</body>
+</html>

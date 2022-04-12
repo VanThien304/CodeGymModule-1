@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  
+</head>
+<body>
+    <div>
+        Result<input type="text" id="box" value="">
+        Red<input type="range" oninput="myColor()" id="red" value="255" min="0" max="255"> <input type="text" id="resultRed" value="">
+        Green<input type="range" oninput="myColor()" id="green" value="255" min="0" max="255"> <input type="text" id="resultGreen"  value="">
+        Blue<input type="range" oninput="myColor()" id="blue" value="255"  min="0" max="255" > <input type="text" id="resultBlue" value="">
+    </div>
+    
+
+    <script type="text/javascript">
+        let value_red = document.getElementById("red").value;
+        let value_green = document.getElementById("green").value;
+        let value_blue = document.getElementById("blue").value;
+        document.getElementById("box").value = "rgb" + value_red + "," + value_green + "," + value_blue;
+        document.getElementById("resultRed").value = value_red;
+        document.getElementById("resultGreen").value = value_green;
+        document.getElementById("resultBlue").value = value_blue;
+        
+        function myColor(){
+
+        
+            var color = document.getElementById('box');
+            var _red = document.getElementById('red').value;
+            var _green = document.getElementById('green').value;
+            var _blue = document.getElementById('blue').value;
+
+            document.getElementById("red").value = _red;
+            document.getElementById("green").value = _green;
+            document.getElementById("blue").value = _blue;
+
+
+
+            color.style.background = 'rgb(' + _red + ',' + _green + ',' + _blue +')';
+            (document.getElementById("red")).style.background = 'rgb('+ _red +')';
+            
+            color.value = "rgb" +_red + ", " +_green + ", " + _blue ;
+            document.getElementById("resultRed").value = _red;
+            document.getElementById("resultGreen").value = _green;
+            document.getElementById("resultBlue").value = _blue;
+           
+        }
+        
+        
+    </script>
+</body>
+</html>
